@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FORM JS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,800&family=Raleway:wght@700&family=Rubik&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="/assets/fontawesome/css/all.css">
+  <link rel="stylesheet" href="../assets/css/normalize.css"> -->
+  <link rel="stylesheet" href="../owl__carousel/assets/css/style.css">
+</head>
+
+<body>
+
+  <nav>
+    <a href="../owl__carousel/index.html">EXAM 2</a>
+    <ul class="nav__list">
+        <li><a href="#">POSTS</a></li>
+        <li><a href="/form-js/index.html">FORM</a></li>
+        <li><a href="/form-users/index.html">CREATE</a></li>
+        <li><a href="/owl__carousel/index.html">OWL</a></li>  
+    </ul>
+  </nav>
+  <h1 class="formjs__title">Sign up</h1>
+    <header class="formjs" id="formjs">
+        <form action="" onsubmit="" class="form--js" event="preventDefault()">
+            <label for="username" class="form__label">Username</label>
+            <input type="text" class="form__input" id="username"  required>
+            <div class="form__error--username">Please type a username</div>
+
+            <label for="email" class="form__label">Email</label>
+            <input type="email" id="email" class="form__input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"  required>
+            <div class="form__error--email">Enter a valid email address!</div>
+
+            <label for="password" class="form__label">Create Password</label>
+            <input type="password" id="password" class="form__input" minlength="8" required>
+            <div class="form__error" id="alertP">Enter a valid password</div>
+
+            <label for="password" class="form__label">Confirm Password</label>
+            <input type="password" id="confirmPassword" class="form__input" minlength="8" required>
+            <div class="form__error" id="alertP">Enter a valid password</div>
+            
+
+            <button class="btn btn--formjs" type="submit" onclick="submitForm()">Submit</button>
+
+        </form>
+    </header>
+
+    <div id="error"></div>
+    <div id="alert"></div>
+
+
+
+    <script src="/form-js/assets/js/main.js"></script>
+</body>
+</html>

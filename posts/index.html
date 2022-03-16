@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FORM JS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,800&family=Raleway:wght@700&family=Rubik&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="/posts/assets/fontawesome/css/all.css">
+  <link rel="stylesheet" href="/posts/assets/css/normalize.css">
+  <link rel="stylesheet" href="../owl__carousel/assets/css/style.css">
+</head>
+
+<body>
+
+  <nav>
+    <a href="../owl__carousel/index.html">EXAM 2</a>
+    <ul class="nav__list">
+        <li><a href="/posts/index.html">POSTS</a></li>
+        <li><a href="/form-js/index.html">FORM</a></li>
+        <li><a href="/form-users/index.html">CREATE</a></li>
+        <li><a href="/owl__carousel/index.html">OWL</a></li>  
+    </ul>
+  </nav>
+  <h1 class="post__header">Our Posts</h1>
+<header class="posts__container">
+    <div class="posts">
+      <label for="title" class="posts__label">Title</label>
+      <input type="text" id="titlee" placeholder="Title" class="post__title">
+
+      <label for="userId" class="posts__label">User ID</label>
+      <input type="number" name="userId" id="userId" placeholder="Title ID" class="post__id">
+
+      <label for="comments" class="posts__label">Comment</label>
+      <textarea name="body" id="body" cols="30" rows="10" class="post__textarea"></textarea>
+
+      <button onclick="addPost()">Add Post</button>
+
+    </div>
+   
+
+
+
+ 
+
+</header>
+<div id="posts"></div>
+
+<div id="modal">
+  <button onclick="closeModal()"><i class="fa fa-times" aria-hidden="true"></i></button>
+  <div id="comments">
+
+  </div>
+</div>
+
+
+    <script src="/posts/assets/js/main.js"></script>
+</body>
+</html>
